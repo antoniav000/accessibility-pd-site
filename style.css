@@ -1,4 +1,59 @@
 body {
-  font-family: sans-serif;
-  margin: 40px;
+  font-family: Arial, sans-serif;
+  background-color: #f0fff4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.container {
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #2f855a;
+}
+
+/* Module card */
+.module {
+  margin: 15px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Header (clickable) */
+.module-header {
+  width: 100%;
+  padding: 15px;
+  background-color: #38a169;
+  color: white;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Content (hidden by default) */
+.module-content {
+  display: none;
+  background: white;
+  padding: 15px;
+}
+
+/* Button */
+.start-btn {
+  background-color: #2f855a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.start-btn:hover {
+  background-color: #276749;
 }
