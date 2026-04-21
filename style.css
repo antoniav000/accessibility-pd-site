@@ -28,6 +28,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #3d6953;
 }
 
 /* Progress circle */
@@ -36,7 +37,7 @@ h1 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: conic-gradient(#2f855a calc(var(--progress) * 1%), #ddd 0);
+  background: conic-gradient(#eaf7ef calc(var(--progress) * 1%), #ddd 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +56,7 @@ h1 {
   position: relative;
   z-index: 1;
   text-align: center;
-  color: #2f855a;
+  color: #eaf7ef;
   font-weight: bold;
 }
 
