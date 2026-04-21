@@ -24,11 +24,11 @@ h1 {
 
 /* RIGHT SIDE */
 .right-panel {
+  background: linear-gradient(135deg, #eaf7ef 0%, #d8f3e2 100%);
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #347880;
 }
 
 /* Progress circle */
@@ -42,6 +42,7 @@ h1 {
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index:1;
 }
 
 .progress-circle::after {
