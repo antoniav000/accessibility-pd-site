@@ -1,52 +1,40 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f0fff4;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 50px 20px 0;
   margin: 0;
 }
 
-.container {
-  width: min(900px, 100%);
-}
-
-.top-section {
+/* 50/50 layout */
+.layout {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 32px;
-  margin-bottom: 20px;
+  min-height: 100vh;
 }
 
-.left-side {
-  flex: 1;
-  text-align: left;
+/* LEFT SIDE */
+.left-panel {
+  width: 50%;
+  padding: 50px;
+  box-sizing: border-box;
 }
 
 h1 {
   color: #2f855a;
   margin-top: 0;
-  margin-bottom: 8px;
 }
 
-p {
-  margin-top: 0;
-}
-
-.progress-wrap {
-  flex: 0 0 auto;
+/* RIGHT SIDE */
+.right-panel {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
 }
 
+/* Progress circle */
 .progress-circle {
   --progress: 0;
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: conic-gradient(#2f855a calc(var(--progress) * 1%), #ddd 0);
   display: flex;
@@ -58,35 +46,28 @@ p {
 .progress-circle::after {
   content: "";
   position: absolute;
-  inset: 14px;
+  inset: 18px;
   background: #f0fff4;
   border-radius: 50%;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
 }
 
 .progress-circle-inner {
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   color: #2f855a;
   font-weight: bold;
-  text-align: center;
-  line-height: 1.2;
 }
 
 #progress-percent {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .progress-label {
   font-size: 0.9rem;
-  margin-top: 4px;
 }
 
-/* Module card */
+/* Modules */
 .module {
   margin: 15px 0;
   border-radius: 15px;
@@ -94,31 +75,20 @@ p {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Header (clickable) */
 .module-header {
   width: 100%;
   padding: 15px;
   background-color: #f0fff4;
-  outline: black;
-  color: black;
-  font-family: sans-serif;
   border: none;
   text-align: left;
   font-size: 16px;
   cursor: pointer;
-  display: block;
 }
 
-/* Content (hidden by default) */
 .module-content {
   display: none;
   background: white;
   padding: 15px;
-  text-align: left;
-}
-
-.start-link {
-  text-decoration: none;
 }
 
 .start-btn {

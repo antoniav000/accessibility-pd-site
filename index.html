@@ -6,22 +6,14 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="top-section">
-      <div class="left-side">
-        <h1>Foundations of Accessible Design</h1>
-        <p>Select a module to begin.</p>
-      </div>
 
-      <div class="progress-wrap" aria-label="Course progress">
-        <div class="progress-circle" id="progress-circle">
-          <div class="progress-circle-inner">
-            <span id="progress-percent">0%</span>
-            <span class="progress-label">Progress</span>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="layout">
+
+  <!-- LEFT SIDE -->
+  <div class="left-panel">
+
+    <h1>Foundations of Accessible Design</h1>
+    <p>Select a module to begin.</p>
 
     <!-- Module 1 -->
     <div class="module">
@@ -30,7 +22,7 @@
       </button>
       <div class="module-content">
         <p>Learn the basics of accessibility and why it matters.</p>
-        <a href="modules/module1.html" class="start-link">
+        <a href="modules/module1.html">
           <button class="start-btn">Begin Module</button>
         </a>
       </div>
@@ -43,7 +35,7 @@
       </button>
       <div class="module-content">
         <p>Understand how screen readers work and how to support them.</p>
-        <a href="modules/module2.html" class="start-link">
+        <a href="modules/module2.html">
           <button class="start-btn">Begin Module</button>
         </a>
       </div>
@@ -56,7 +48,7 @@
       </button>
       <div class="module-content">
         <p>Learn how users navigate websites without a mouse.</p>
-        <a href="modules/module3.html" class="start-link">
+        <a href="modules/module3.html">
           <button class="start-btn">Begin Module</button>
         </a>
       </div>
@@ -69,7 +61,7 @@
       </button>
       <div class="module-content">
         <p>Understand accessible color and visual design principles.</p>
-        <a href="modules/module4.html" class="start-link">
+        <a href="modules/module4.html">
           <button class="start-btn">Begin Module</button>
         </a>
       </div>
@@ -82,7 +74,7 @@
       </button>
       <div class="module-content">
         <p>Learn how to create accessible PDFs and documents.</p>
-        <a href="modules/module5.html" class="start-link">
+        <a href="modules/module5.html">
           <button class="start-btn">Begin Module</button>
         </a>
       </div>
@@ -95,13 +87,26 @@
       </button>
       <div class="module-content">
         <p>Test your knowledge across all accessibility topics.</p>
-        <a href="modules/module6.html" class="start-link">
+        <a href="modules/module6.html">
           <button class="start-btn">Begin Module</button>
         </a>
       </div>
     </div>
+
   </div>
 
-  <script src="script.js"></script>
+  <!-- RIGHT SIDE -->
+  <div class="right-panel">
+    <div class="progress-circle" id="progress-circle">
+      <div class="progress-circle-inner">
+        <span id="progress-percent">0%</span>
+        <span class="progress-label">Progress</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
