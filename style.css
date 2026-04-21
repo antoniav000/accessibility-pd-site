@@ -37,7 +37,7 @@ h1 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: conic-gradient(#eaf7ef calc(var(--progress) * 1%), #ddd 0);
+  background: conic-gradient(#e09f8c calc(var(--progress) * 1%), #ddd 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +48,7 @@ h1 {
   content: "";
   position: absolute;
   inset: 18px;
-  background: #f0fff4;
+  background: #347880;
   border-radius: 50%;
 }
 
