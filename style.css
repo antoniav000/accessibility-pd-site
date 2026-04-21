@@ -4,16 +4,86 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 50px;
+  padding: 50px 20px 0;
+  margin: 0;
 }
 
 .container {
-  width: 400px;
-  text-align: center;
+  width: min(900px, 100%);
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.left-side {
+  flex: 1;
+  text-align: left;
 }
 
 h1 {
   color: #2f855a;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-top: 0;
+}
+
+.progress-wrap {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.progress-circle {
+  --progress: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: conic-gradient(#2f855a calc(var(--progress) * 1%), #ddd 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.progress-circle::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  background: #f0fff4;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.progress-circle-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2f855a;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+}
+
+#progress-percent {
+  font-size: 1.6rem;
+}
+
+.progress-label {
+  font-size: 0.9rem;
+  margin-top: 4px;
 }
 
 /* Module card */
@@ -26,16 +96,17 @@ h1 {
 
 /* Header (clickable) */
 .module-header {
-  width: 200%;
+  width: 100%;
   padding: 15px;
   background-color: #f0fff4;
   outline: black;
   color: black;
-  font-family:sans-serif;
+  font-family: sans-serif;
   border: none;
   text-align: left;
   font-size: 16px;
   cursor: pointer;
+  display: block;
 }
 
 /* Content (hidden by default) */
@@ -43,9 +114,13 @@ h1 {
   display: none;
   background: white;
   padding: 15px;
+  text-align: left;
 }
 
-/* Button */
+.start-link {
+  text-decoration: none;
+}
+
 .start-btn {
   background-color: #2f855a;
   color: white;
@@ -58,4 +133,8 @@ h1 {
 
 .start-btn:hover {
   background-color: #276749;
+}
+
+.check {
+  margin-left: 8px;
 }

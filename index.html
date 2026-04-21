@@ -6,94 +6,102 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="top-section">
+      <div class="left-side">
+        <h1>Foundations of Accessible Design</h1>
+        <p>Select a module to begin.</p>
+      </div>
 
-<div class="container">
+      <div class="progress-wrap" aria-label="Course progress">
+        <div class="progress-circle" id="progress-circle">
+          <div class="progress-circle-inner">
+            <span id="progress-percent">0%</span>
+            <span class="progress-label">Progress</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <h1>Foundations of Accessible Design</h1>
-  <p>Select a module to begin.</p>
+    <!-- Module 1 -->
+    <div class="module">
+      <button class="module-header" id="module1-header">
+        Module 1: Introduction <span class="check"></span>
+      </button>
+      <div class="module-content">
+        <p>Learn the basics of accessibility and why it matters.</p>
+        <a href="modules/module1.html" class="start-link">
+          <button class="start-btn">Begin Module</button>
+        </a>
+      </div>
+    </div>
 
-  <div id="progress">Progress: 0%</div>
+    <!-- Module 2 -->
+    <div class="module">
+      <button class="module-header" id="module2-header">
+        Module 2: Screen Readers <span class="check"></span>
+      </button>
+      <div class="module-content">
+        <p>Understand how screen readers work and how to support them.</p>
+        <a href="modules/module2.html" class="start-link">
+          <button class="start-btn">Begin Module</button>
+        </a>
+      </div>
+    </div>
 
-  <!-- Module 1 -->
-  <div class="module">
-    <button class="module-header" id="module1-header">
-      Module 1: Introduction <span class="check"></span>
-    </button>
-    <div class="module-content">
-      <p>Learn the basics of accessibility and why it matters.</p>
-      <a href="modules/module1.html">
-        <button class="start-btn">Begin Module</button>
-      </a>
+    <!-- Module 3 -->
+    <div class="module">
+      <button class="module-header" id="module3-header">
+        Module 3: Keyboard Navigation <span class="check"></span>
+      </button>
+      <div class="module-content">
+        <p>Learn how users navigate websites without a mouse.</p>
+        <a href="modules/module3.html" class="start-link">
+          <button class="start-btn">Begin Module</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Module 4 -->
+    <div class="module">
+      <button class="module-header" id="module4-header">
+        Module 4: Color Contrast <span class="check"></span>
+      </button>
+      <div class="module-content">
+        <p>Understand accessible color and visual design principles.</p>
+        <a href="modules/module4.html" class="start-link">
+          <button class="start-btn">Begin Module</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Module 5 -->
+    <div class="module">
+      <button class="module-header" id="module5-header">
+        Module 5: Accessible Documents <span class="check"></span>
+      </button>
+      <div class="module-content">
+        <p>Learn how to create accessible PDFs and documents.</p>
+        <a href="modules/module5.html" class="start-link">
+          <button class="start-btn">Begin Module</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Module 6 -->
+    <div class="module">
+      <button class="module-header" id="module6-header">
+        Module 6: Final Assessment <span class="check"></span>
+      </button>
+      <div class="module-content">
+        <p>Test your knowledge across all accessibility topics.</p>
+        <a href="modules/module6.html" class="start-link">
+          <button class="start-btn">Begin Module</button>
+        </a>
+      </div>
     </div>
   </div>
 
-  <!-- Module 2 -->
-  <div class="module">
-    <button class="module-header" id="module2-header">
-      Module 2: Screen Readers <span class="check"></span>
-    </button>
-    <div class="module-content">
-      <p>Understand how screen readers work and how to support them.</p>
-      <a href="modules/module2.html">
-        <button class="start-btn">Begin Module</button>
-      </a>
-    </div>
-  </div>
-
-  <!-- Module 3 -->
-  <div class="module">
-    <button class="module-header" id="module3-header">
-      Module 3: Keyboard Navigation <span class="check"></span>
-    </button>
-    <div class="module-content">
-      <p>Learn how users navigate websites without a mouse.</p>
-      <a href="modules/module3.html">
-        <button class="start-btn">Begin Module</button>
-      </a>
-    </div>
-  </div>
-
-  <!-- Module 4 -->
-  <div class="module">
-    <button class="module-header" id="module4-header">
-      Module 4: Color Contrast <span class="check"></span>
-    </button>
-    <div class="module-content">
-      <p>Understand accessible color and visual design principles.</p>
-      <a href="modules/module4.html">
-        <button class="start-btn">Begin Module</button>
-      </a>
-    </div>
-  </div>
-
-  <!-- Module 5 -->
-  <div class="module">
-    <button class="module-header" id="module5-header">
-      Module 5: Accessible Documents <span class="check"></span>
-    </button>
-    <div class="module-content">
-      <p>Learn how to create accessible PDFs and documents.</p>
-      <a href="modules/module5.html">
-        <button class="start-btn">Begin Module</button>
-      </a>
-    </div>
-  </div>
-
-  <!-- Module 6 -->
-  <div class="module">
-    <button class="module-header" id="module6-header">
-      Module 6: Final Assessment <span class="check"></span>
-    </button>
-    <div class="module-content">
-      <p>Test your knowledge across all accessibility topics.</p>
-      <a href="modules/module6.html">
-        <button class="start-btn">Begin Module</button>
-      </a>
-    </div>
-  </div>
-
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

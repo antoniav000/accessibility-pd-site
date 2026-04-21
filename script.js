@@ -1,14 +1,12 @@
 console.log("Site loaded");
 
 document.addEventListener("DOMContentLoaded", () => {
-
   updateProgress();
   setupAccordion();
   updateCheckmarks();
-
 });
 
-// Progress bar
+// Progress circle
 function updateProgress() {
   let completed = 0;
 
@@ -18,21 +16,21 @@ function updateProgress() {
     }
   }
 
-  let percent = (completed / 6) * 100;
+  const percent = Math.round((completed / 6) * 100);
 
-  let progressDiv = document.getElementById("progress");
-  if (progressDiv) {
-    progressDiv.innerHTML = `
-      <p>Progress: ${percent}%</p>
-      <div style="background:#ddd; width:300px;">
-        <div style="background:green; width:${percent}%; height:20px;"></div>
-      </div>
-    `;
+  const progressCircle = document.getElementById("progress-circle");
+  const progressPercent = document.getElementById("progress-percent");
+
+  if (progressCircle) {
+    progressCircle.style.setProperty("--progress", percent);
+  }
+
+  if (progressPercent) {
+    progressPercent.textContent = `${percent}%`;
   }
 }
 
 // Module dropdowns
-
 function setupAccordion() {
   const headers = document.querySelectorAll(".module-header");
 
@@ -56,13 +54,12 @@ function setupAccordion() {
 }
 
 // Check marks for completed modules
-
 function updateCheckmarks() {
   for (let i = 1; i <= 6; i++) {
     if (localStorage.getItem(`module${i}Complete`)) {
-      let header = document.getElementById(`module${i}-header`);
+      const header = document.getElementById(`module${i}-header`);
       if (header) {
-        let check = header.querySelector(".check");
+        const check = header.querySelector(".check");
         if (check) {
           check.textContent = "✔";
         }
