@@ -24,7 +24,7 @@ h1 {
 
 /* RIGHT SIDE */
 .right-panel {
-  background: linear-gradient(135deg, #eaf7ef 0%, #d8f3e2 100%);
+  background: linear-gradient(135deg, #eaf7ef 0%, #347880 100%);
   width: 30%;
   display: flex;
   justify-content: center;
