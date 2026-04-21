@@ -20,17 +20,14 @@ function updateProgress() {
 
   let percent = (completed / 6) * 100;
 
-  // update circle fill
-  let circle = document.querySelector(".circle");
-  if (circle) {
-    circle.style.background =
-      `conic-gradient(#38a169 ${(percent/100) * 3.6}deg, #e6fffa 0deg)`;
-  }
-
-  // update text
-  let percentText = document.getElementById("percentText");
-  if (percentText) {
-    percentText.textContent = `${Math.round(percent)}%`;
+  let progressDiv = document.getElementById("progress");
+  if (progressDiv) {
+    progressDiv.innerHTML = `
+      <p>Progress: ${percent}%</p>
+      <div style="background:#ddd; width:300px;">
+        <div style="background:green; width:${percent}%; height:20px;"></div>
+      </div>
+    `;
   }
 }
 
@@ -73,3 +70,5 @@ function updateCheckmarks() {
     }
   }
 }
+
+updateProgress();
