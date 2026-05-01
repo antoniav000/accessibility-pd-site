@@ -91,6 +91,9 @@ h1 {
   text-align: left;
   font-size: 16px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .module-content {
