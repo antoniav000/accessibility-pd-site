@@ -1,9 +1,14 @@
 const quizData = [
   {
-    question: "What does accessibility mean?",
-    options: ["Usability for all", "Only for disabled users", "Design only"],
-    answer: 0
+    question: "What does accessibility (A11y) primarily aim to do?",
+    options: ["Reduce course workload", "Ensure equal access and usability for all users", "Simplify grading for instructors", "Replace traditional teaching methods"],
+    answer: 1
   },
+  {
+    question: "What does accessibility (A11y) primarily aim to do?",
+    options: ["Reduce course workload", "Ensure equal access and usability for all users", "Simplify grading for instructors", "Replace traditional teaching methods"],
+    answer: 1
+  }
   // add 9 more questions
 ];
 
