@@ -26,7 +26,7 @@ function updateProgress() {
   }
 
   if (progressPercent) {
-    progressPercent.textContent = `${percent}%`;
+    progressPercent.textContent = `Course progress - ${percent}%`;
   }
 }
 
