@@ -15,6 +15,7 @@ body {
   width: 70%;
   padding: 50px;
   box-sizing: border-box;
+  background-color: #e4eeef;
 }
 
 h1 {
@@ -86,7 +87,7 @@ h1 {
 .module-header {
   width: 100%;
   padding: 15px;
-  background-color: #e0f0e9;
+  background-color: white;
   border: none;
   text-align: left;
   font-size: 16px;
