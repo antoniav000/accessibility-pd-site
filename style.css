@@ -28,6 +28,7 @@ ul.b {
   list-style-type: disc;
   text-align: left;
   max-width: 640px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Modules */
@@ -93,6 +94,8 @@ ul.b {
 }
 
 .p2 {
+  max-width: 650px;
+  margin: 0 auto; /*center horizontally*/
   line-height: 1.6;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
