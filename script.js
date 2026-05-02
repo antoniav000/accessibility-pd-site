@@ -61,7 +61,7 @@ function updateCheckmarks() {
       if (header) {
         const check = header.querySelector(".check");
         if (check) {
-          check.textContent = "✓";
+          check.textContent = "Complete! ✓";
         }
       }
     }
