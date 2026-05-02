@@ -52,15 +52,6 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.moduleheading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20;
-  padding-top: 20px;
-}
-
 .module-content {
   display: none;
   background: white;
@@ -83,6 +74,21 @@ h1 {
 
 .check {
   margin-left: 8px;
+}
+
+.moduleheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20;
+  padding-top: 20px;
+}
+
+.subheading {
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .p1 {
