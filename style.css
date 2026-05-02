@@ -93,6 +93,8 @@ h1 {
 }
 
 .body1 {
+  display: flex;
+  justify-content: center;
   background-color:#e4eeef;
 }
 
