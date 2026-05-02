@@ -90,6 +90,7 @@ h1 {
   margin: 0 auto; /*center horizontally*/
   line-height: 1.6;
   font-family: Arial, Helvetica, sans-serif;
+}
 
 .body1 {
   display: flex;
@@ -165,4 +166,3 @@ h1 {
 .progress-label {
   font-size: 0.9rem;
 }
-
