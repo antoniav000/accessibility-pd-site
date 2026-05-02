@@ -52,6 +52,14 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.moduleheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20;
+}
+
 .module-content {
   display: none;
   background: white;
