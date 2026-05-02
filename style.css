@@ -24,7 +24,10 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-ul.b {list-style-type: disc;
+ul.b {
+  list-style-type: disc;
+  text-align: left;
+  max-width: 640px;
 }
 
 /* Modules */
