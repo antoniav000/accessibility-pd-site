@@ -16,18 +16,18 @@ function updateProgress() {
     }
   }
 
-  const percent = Math.round((completed / 5) * 100);
+  const percent = Math.round((completed / 4) * 100);
 
-  const progressCircle = document.getElementById("progress-circle");
-  const progressPercent = document.getElementById("progress-percent");
+  const circle = document.getElementById("progress-ring");
+  const radius = 80;
+  const circumference = 2 * Math.PI * radius;
 
-  if (progressCircle) {
-    progressCircle.style.setProperty("--progress", percent);
-  }
+  const offset = circumference - (percent / 100) * circumference;
 
-  if (progressPercent) {
-    progressPercent.textContent = `${percent}%`;
-  }
+  circle.style.strokeDasharray = circumference;
+  circle.style.strokeDashoffset = offset;
+
+  document.getElementById("progress-percent").textContent = `${percent}%`;
 }
 
 // Module dropdowns

@@ -87,36 +87,27 @@ h1 {
 
 /* Progress circle */
 .progress-circle {
-  --progress: 0;
+  position: relative;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(#347880 calc(var(--progress) * 1%), #ddd 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index:1;
 }
 
-.progress-circle::after {
-  content: "";
+.progress-circle svg {
   position: absolute;
-  inset: 18px;
-  background: linear-gradient(135deg, #e0f0e9 0%, #347880 100%);
-  border-radius: 50%;
-}
-
-.progress-circle:hover{
-  transform: translateY(-4px);
+  top: 0;
+  left: 0;
 }
 
 .progress-circle-inner {
   position: relative;
   z-index: 1;
-  text-align: center;
-  color: #e0f0e9;
-  font-weight: bold;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 #progress-percent {
