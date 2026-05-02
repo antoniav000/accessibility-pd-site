@@ -77,9 +77,10 @@ h1 {
 }
 
 .p1 {
-  max-width: 350px;
+  max-width: 600px;
   margin: 0 auto; /*center horizontally*/
   line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* RIGHT SIDE */
