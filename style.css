@@ -76,7 +76,7 @@ h1 {
   margin-left: 8px;
 }
 
-p1 {
+.p1 {
   max-width: 350px;
   margin: 0 auto; /*center horizontally*/
   line-height: 1.6;
