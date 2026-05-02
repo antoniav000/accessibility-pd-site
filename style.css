@@ -77,11 +77,9 @@ h1 {
 }
 
 p1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  max-width: 600px;
+  margin: 0 auto; /*center horizontally*/
+  line-height: 1.6;
 }
 
 /* RIGHT SIDE */
