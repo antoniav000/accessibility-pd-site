@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
 function updateProgress() {
   let completed = 0;
 
-  for (let i = 1; i <= 4; i++) {
+  for (let i = 1; i <= 5; i++) {
     if (localStorage.getItem(`module${i}Complete`)) {
       completed++;
     }
   }
 
-  const percent = Math.round((completed / 4) * 100);
+  const percent = Math.round((completed / 5) * 100);
 
   const progressCircle = document.getElementById("progress-circle");
   const progressPercent = document.getElementById("progress-percent");
@@ -55,13 +55,13 @@ function setupAccordion() {
 
 // Check marks for completed modules
 function updateCheckmarks() {
-  for (let i = 1; i <= 4; i++) {
+  for (let i = 1; i <= 5; i++) {
     if (localStorage.getItem(`module${i}Complete`)) {
       const header = document.getElementById(`module${i}-header`);
       if (header) {
         const check = header.querySelector(".check");
         if (check) {
-          check.textContent = "⭐️";
+          check.textContent = "✓";
         }
       }
     }
