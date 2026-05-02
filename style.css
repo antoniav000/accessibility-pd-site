@@ -77,7 +77,7 @@ h1 {
 }
 
 .p1 {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto; /*center horizontally*/
   line-height: 1.6;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -94,6 +94,31 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.panel-top{
+  flex:1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.panel-bottom {
+  flex: 1;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.side-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
 }
 
 /* Progress circle */

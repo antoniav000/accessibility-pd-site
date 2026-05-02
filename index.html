@@ -86,40 +86,43 @@
 
   <!-- RIGHT SIDE -->
   <div class="right-panel">
-    <div class="progress-circle">
-  <svg width="200" height="200">
-    <!-- background ring -->
-    <circle
-      cx="100"
-      cy="100"
-      r="80"
-      stroke="#ddd"
-      stroke-width="12"
-      fill="none"
-    />
-    
-    <!-- progress ring -->
-    <circle
-      id="progress-ring"
-      cx="100"
-      cy="100"
-      r="80"
-      stroke="#347880"
-      stroke-width="12"
-      fill="none"
-      stroke-linecap="round"
-      transform="rotate(-90 100 100)"
-    />
-  </svg>
+    <!-- Top Part-->
+    <div class="panel-top">
+      <img src="computer_work.jpg" alt="Person's hands working on laptop" class="side-image">
+    </div>
 
-  <div class="progress-circle-inner">
-    <span id="progress-percent">0%</span>
-    <span class="progress-label">Complete</span>
-  </div>
-</div>
-  </div>
+    <!-- Bottom Part-->
+    <div class="panel-bottom">
+      <div class="progress-circle">
+        <svg width="200" height="200">
+        <!-- background ring -->
+          <circle
+          cx="100"
+          cy="100"
+          r="80"
+          stroke="#ddd"
+          stroke-width="12"
+          fill="none"/>
+        <!-- progress ring -->
+          <circle
+          id="progress-ring"
+          cx="100"
+          cy="100"
+          r="80"
+          stroke="#347880"
+          stroke-width="12"
+          fill="none"
+          stroke-linecap="round"
+          transform="rotate(-90 100 100)"/>
+        </svg>
 
-</div>
+        <div class="progress-circle-inner">
+          <span id="progress-percent">0%</span>
+          <span class="progress-label">Complete</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <script src="script.js"></script>
 </body>
