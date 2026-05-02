@@ -16,7 +16,7 @@ function updateProgress() {
     }
   }
 
-  const percent = Math.round((completed / 4) * 100);
+  const percent = Math.round((completed / 5) * 100);
 
   const circle = document.getElementById("progress-ring");
   const radius = 80;

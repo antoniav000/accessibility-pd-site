@@ -90,6 +90,7 @@ h1 {
   position: relative;
   width: 200px;
   height: 200px;
+  stroke: #347880;
 }
 
 .progress-circle svg {
