@@ -96,33 +96,19 @@ ul.b {
   padding-top: 20px;
 }
 
-.p2 {
+.p1, .p2, .p3 {
   max-width: 650px;
-  margin: 0 auto; /*center horizontally*/
+  margin: 10px auto;
   line-height: 1.6;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
   text-align: left;
 }
 
-.p1 {
-  max-width: 650px;
-  margin: 0 auto; /*center horizontally*/
-  line-height: 1.6;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.p2 {
+  font-weight: bold;
 }
 
-.p3 {
-  max-width: 650px;
-  margin: 0 auto; /*center horizontally*/
-  line-height: 1.6;
-  font-family: Arial, Helvetica, sans-serif;
-  color: gray;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 
 .module-image {
   max-width: 40%;
