@@ -161,7 +161,7 @@ ul.b {
 }
 
 .top-banner {
-  height: 120px;
+  height: 100px;
   background: linear-gradient(135deg, #e0f0e9 0%, #347880 100%);
   width: 100%;
 }
@@ -211,4 +211,66 @@ ul.b {
   border-radius: 4px;
   padding: 5px;
 }
+
+/*Quiz container*/
+#quiz-container {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+/* Each question block*/
+#quiz-container > div {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Question text */
+#quiz-container p {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Answer options */
+#quiz-container label {
+  display: block;
+  padding: 10px 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: 1px solid #ddd;
+}
+
+/* Hover quiz labels */
+#quiz-container label:hover {
+  background-color: #f3f8f5;
+  border-color: #347880;
+}
+
+/* Button spacing */
+#quiz-container input {
+  margin-right: 10px;
+}
+
+/* Submit button */
+#quiz-container button {
+    margin-top: 15px;
+  padding: 10px 16px;
+  border: none;
+  background-color: #347880;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#quiz-container button:hover {
+  background-color: #2a6872; 
+}
+
+
 
