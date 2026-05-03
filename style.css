@@ -18,12 +18,14 @@ body {
   background-color: #e4eeef;
 }
 
+/* Dashboard heading*/
 h1 {
   color: #347880;
   margin-top: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Bullet points */
 ul.b {
   list-style-type: disc;
   text-align: left;
@@ -34,7 +36,7 @@ ul.b {
   margin-bottom: 10px;
 }
 
-/* Modules */
+/* Modules from dashboard*/
 .module {
   margin: 15px 0;
   border-radius: 15px;
@@ -62,12 +64,14 @@ ul.b {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Dropdown from module headers*/
 .module-content {
   display: none;
   background: white;
   padding: 15px;
 }
 
+/* Button to start modules and quizzes */
 .start-btn {
   background-color: #347880;
   color: white;
@@ -75,57 +79,18 @@ ul.b {
   padding: 10px 15px;
   border-radius: 10px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
+/* Start button background changes when hovered over */
 .start-btn:hover {
   background-color: #2a6872;
 }
 
+/* Checkmark for completed modules */
 .check {
   margin-left: 8px;
-}
-
-.moduleheading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  padding-top: 20px;
-}
-
-.body1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color:white;
-}
-
-.p1, .p2, .p3 {
-  max-width: 650px;
-  margin: 10px auto;
-  line-height: 1.6;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-}
-
-.p2 {
-  font-weight: bold;
-  text-align: left;
-  width: 100%;
-}
-
-.module-image {
-  max-width: 40%;
-  max-height: 40%;
-  object-fit: contain;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
 }
 
 /* RIGHT SIDE */
@@ -194,3 +159,49 @@ ul.b {
 .progress-label {
   font-size: 0.9rem;
 }
+
+.moduleheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+/* Body for module pages */
+.body1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:white;
+}
+
+/* Paragraphs for module pages */
+.p1, .p2, .p3 {
+  max-width: 650px;
+  margin: 10px auto;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+/* Bold subheadings */
+.p2 {
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+/* Images for module pages */
+.module-image {
+  max-width: 40%;
+  max-height: 40%;
+  object-fit: contain;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
