@@ -127,9 +127,10 @@ ul.b {
   max-width: 40%;
   max-height: 40%;
   object-fit: contain;
-  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
   margin-top: 10px;
   margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .body1 {
