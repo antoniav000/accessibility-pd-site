@@ -75,8 +75,18 @@ function submitQuiz() {
     }
   });
 
-  alert(`You scored ${score}/5`);
+  // Show modal instead of alert
+  document.getElementById("result-text").innerText =
+    `You scored ${score}/${quizData.length}`;
+
+  document.getElementById("result-modal").classList.remove("hidden");
+
+  //alert(`You scored ${score}/5`);
 
   // save progress
   localStorage.setItem("module1Complete", "true");
+}
+
+function closeModal() {
+  document.getElementById("result-modal").classList.add("hidden");
 }
