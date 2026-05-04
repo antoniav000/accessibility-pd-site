@@ -75,7 +75,6 @@ function submitQuiz() {
     }
   });
 
-  // Show modal instead of alert
   document.getElementById("result-text").innerText =
     `You scored ${score}/${quizData.length}`;
 
