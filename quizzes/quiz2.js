@@ -29,13 +29,13 @@ const quizData = [
       "The arrangement and organization of content on a page",
       "Ensuring all images are centered", 
       "Making all text bold"],
-    answer: 2
+    answer: 1
   },
   {
     question: "How does using plain language improve accessibility?",
     options: ["It makes documents longer and more detailed", 
       "It removes the need for headings", 
-      "t eliminates the need for structure", 
+      "It eliminates the need for structure", 
       "It helps users find, understand, and use information more easily"],
     answer: 3
   }
