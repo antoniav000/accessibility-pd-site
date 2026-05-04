@@ -1,28 +1,43 @@
 const quizData = [
   {
-    question: "What does accessibility (A11y) primarily aim to do?",
-    options: ["Reduce course workload", "Ensure equal access and usability for all users", "Simplify grading for instructors", "Replace traditional teaching methods"],
+    question: "What is the best definition of accessibility (A11y) in the context of education?",
+    options: ["Designing content only for students with disabilities", 
+      "Ensuring all students have equal access to information and learning experiences", 
+      "Making websites look visually appealing", 
+      "Providing extra help only when students ask for it"],
     answer: 1
   },
   {
-    question: "What does accessibility (A11y) primarily aim to do?",
-    options: ["Reduce course workload", "Ensure equal access and usability for all users", "Simplify grading for instructors", "Replace traditional teaching methods"],
-    answer: 1
+    question: "According to the U.S. Department of Education definition, what must accessible content ensure for students with disabilities?",
+    options: ["Faster access than other students", 
+      "Identical user interfaces", 
+      "Equal opportunity to obtain information as independently as possible", 
+      "Additional grading flexibility"],
+    answer: 2
   },
   {
-    question: "What does accessibility (A11y) primarily aim to do?",
-    options: ["Reduce course workload", "Ensure equal access and usability for all users", "Simplify grading for instructors", "Replace traditional teaching methods"],
-    answer: 1
+    question: "Which group benefits from accessible design beyond students with disabilities?",
+    options: ["Only faculty members", 
+      "Only graduate students", 
+      "Students with temporary or situational limitations", 
+      "Only students in STEM courses"],
+    answer: 2
   },
   {
-    question: "What does accessibility (A11y) primarily aim to do?",
-    options: ["Reduce course workload", "Ensure equal access and usability for all users", "Simplify grading for instructors", "Replace traditional teaching methods"],
-    answer: 1
+    question: "Which of the following is NOT one of the POUR principles?",
+    options: ["Perceivable", 
+      "Operable",
+      "Understandable", 
+      "Reasonable"],
+    answer: 3
   },
   {
-    question: "What does accessibility (A11y) primarily aim to do?",
-    options: ["Reduce course workload", "Ensure equal access and usability for all users", "Simplify grading for instructors", "Replace traditional teaching methods"],
-    answer: 1
+    question: "Which is an example of a common barrier in digital learning for students with disabilities?",
+    options: ["Lack of captions, transcripts, or alt text", 
+      "Too many group projects", 
+      "Having too many office hours", 
+      "Using too many textbooks"],
+    answer: 0
   }
 ];
 
