@@ -192,10 +192,28 @@ ul.b {
   padding: 0 20px;
 }
 
+/* Group text vertically */
+.banner-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Clean text spacing */
+.banner-text h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.banner-text .tagline {
+  margin: 2px 0 0 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
 /* Dashboard button */
 .dashboard-btn {
   background: white;
-  color: #4CAF50;
+  color: #347880;
   padding: 8px 14px;
   border-radius: 8px;
   text-decoration: none;
