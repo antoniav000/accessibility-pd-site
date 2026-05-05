@@ -167,7 +167,7 @@ ul.b {
   left: 0;
   width: 100%;
   height: 80px;
-  background: linear-gradient(135deg, #e0f0e9 0%, #347880 100%);
+  background: #d4e8e2;
   color: white;
   z-index: 1000;
   display: flex;
@@ -205,6 +205,10 @@ ul.b {
 .banner-text h1 {
   margin: 0;
   font-size: 20px;
+  color: #347880;
+}
+
+.banner-text p {
   color: #347880;
 }
 
