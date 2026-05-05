@@ -172,12 +172,14 @@ ul.b {
   z-index: 1000;
   display: fle;
   align-items: center;
-  transition: transform 0.3s ease;
+  transform: translateY(0);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  will-change: transform;
 }
 
 /* Hidden state (slides up) */
 .top-banner.hidden{
-  transform: translateY(-100%);
+  transform: translateY(-110%);
 }
 
 .banner-inner {
