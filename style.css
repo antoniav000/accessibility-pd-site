@@ -170,7 +170,7 @@ ul.b {
   background: linear-gradient(135deg, #e0f0e9 0%, #347880 100%);
   color: white;
   z-index: 1000;
-  display: fle;
+  display: flex;
   align-items: center;
   transform: translateY(0);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -192,6 +192,7 @@ ul.b {
   align-items: center;
 
   padding: 0 20px;
+  height: 100%;
 }
 
 /* Group text vertically */
@@ -204,12 +205,13 @@ ul.b {
 .banner-text h1 {
   margin: 0;
   font-size: 20px;
+  color: #347880;
 }
 
 .banner-text .tagline {
   margin: 2px 0 0 0;
   font-size: 13px;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 /* Dashboard button */
