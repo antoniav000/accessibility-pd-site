@@ -68,4 +68,20 @@ function updateCheckmarks() {
   }
 }
 
+// Scroll module page bar 
+let lastScrollY = window.scrollY;
+const banner = document.getElementById("top-banner");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > lastScrollY) {
+    // scrolling DOWN → hide banner
+    banner.classList.add("hidden");
+  } else {
+    // scrolling UP → show banner
+    banner.classList.remove("hidden");
+  }
+
+  lastScrollY = window.scrollY;
+});
+
 updateProgress();

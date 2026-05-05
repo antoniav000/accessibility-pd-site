@@ -162,9 +162,49 @@ ul.b {
 }
 
 .top-banner {
-  height: 100px;
-  background: linear-gradient(135deg, #e0f0e9 0%, #347880 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 80px;
+  background: linear-gradient(135deg, #e0f0e9 0%, #347880 100%);
+  color: white;
+  z-index: 1000;
+  display: fle;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+/* Hidden state (slides up) */
+.top-banner.hidden{
+  transform: translateY(-100%);
+}
+
+.banner-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto; 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+}
+
+/* Dashboard button */
+.dashboard-btn {
+  background: white;
+  color: #4CAF50;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.dashboard-btn:hover {
+  background: #f2f2f2;
 }
 
 /*Heading for module pages*/
@@ -179,6 +219,7 @@ ul.b {
 
 /* Body for module pages */
 .body1 {
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
