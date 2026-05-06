@@ -40,7 +40,7 @@ function updateProgress() {
 
   circle.style.strokeDasharray = circumference;
   // Start at 0%
-  circle.style.strokeDashoffset = circumference;
+  //circle.style.strokeDashoffset = circumference;
 
   // Force browser to apply initial state before animating
   setTimeout(() => {
