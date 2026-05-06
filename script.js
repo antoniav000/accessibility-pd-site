@@ -6,6 +6,20 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCheckmarks();
 });
 
+function animateNumber(targetPercent) {
+  const el = document.getElementById("progress-percent");
+  let current = 0;
+
+  const interval = setInterval(() => {
+    if (current >= targetPercent) {
+      clearInterval(interval);
+    } else {
+      current++;
+      el.textContent = `${current}%`;
+    }
+  }, 15); // speed (lower = faster)
+}
+
 // Progress circle
 function updateProgress() {
   let completed = 0;
@@ -34,7 +48,8 @@ function updateProgress() {
     circle.style.strokeDashoffset = offset;
   }, 50);
 
-  document.getElementById("progress-percent").textContent = `${percent}%`;
+  //document.getElementById("progress-percent").textContent = `${percent}%`;
+  animateNumber(percent);
 }
 
 // Module dropdowns
