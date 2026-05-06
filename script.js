@@ -25,7 +25,14 @@ function updateProgress() {
   const offset = circumference - (percent / 100) * circumference;
 
   circle.style.strokeDasharray = circumference;
-  circle.style.strokeDashoffset = offset;
+  // Start at 0%
+  circle.style.strokeDashoffset = circumference;
+
+  // Force browser to apply initial state before animating
+  setTimeout(() => {
+    const offset = circumference - (percent / 100) * circumference;
+    circle.style.strokeDashoffset = offset;
+  }, 50);
 
   document.getElementById("progress-percent").textContent = `${percent}%`;
 }

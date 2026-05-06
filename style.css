@@ -161,6 +161,10 @@ ul.b {
   font-size: 0.9rem;
 }
 
+#progress-ring {
+  transition: stroke-dashoffset 1s ease;
+}
+
 .top-banner {
   position: fixed;
   top: 0;
