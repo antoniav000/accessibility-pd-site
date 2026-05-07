@@ -26,6 +26,10 @@ h1 {
   font-size: 25px;
 }
 
+.paragraph {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Bullet points */
 ul.b {
   list-style-type: disc;
