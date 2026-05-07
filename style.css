@@ -123,8 +123,14 @@ ul.b {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  
+}
+
+/* Dark overlay for circle*/
+.right-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
 }
 
 .dashboard-video {
@@ -190,6 +196,7 @@ ul.b {
 
 #progress-ring {
   transition: stroke-dashoffset 1s ease;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
 }
 
 .top-banner {
