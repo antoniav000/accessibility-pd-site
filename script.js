@@ -83,7 +83,12 @@ function updateCheckmarks() {
       if (header) {
         const check = header.querySelector(".check");
         if (check) {
-          check.textContent = "Complete! ✓";
+          //check.textContent = "Complete! ✓";
+          check.innerHTML = `
+          <span class="completed-badge">
+            ✓ Completed
+          </span>
+        `;
         }
       }
     }
