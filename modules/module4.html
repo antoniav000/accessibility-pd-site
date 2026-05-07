@@ -5,7 +5,15 @@
   <link rel="icon" href="../favicon.ico">
 </head>
 
-<div class="top-banner"></div>
+<div id="top-banner" class="top-banner">
+   <div class="banner-inner">
+      <div class="banner-text">
+          <h1>PRISM | Proactive Resources for Inclusive Student Materials</h1>
+          <p class="tagline">Module 4: Accessible Media & Multimedia</p>
+      </div>
+      <a href="../index.html" class="dashboard-btn">Return to Dashboard</a>
+   </div>
+</div>
 
 <body class="body1">
 
@@ -113,6 +121,14 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
 
 <div id="quiz-container"></div>
+
+<div id="result-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Quiz Result</h2>
+    <p id="result-text"></p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
 
 <script src="../quizzes/quiz4.js"></script>
 <script src="../script.js"></script>
