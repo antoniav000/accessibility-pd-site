@@ -113,42 +113,40 @@ ul.b {
 
 /* RIGHT SIDE */
 .right-panel {
-  background: linear-gradient(135deg, #e0f0e9 0%, #347880 100%);
+  /*background: linear-gradient(135deg, #e0f0e9 0%, #347880 100%);*/
+  position: relative;
   width: 30%;
+  min-height: 100vh;
+  overflow: hidden;
+  
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
+  
+  
 }
 
 .dashboard-video {
-  width: 90%;
-  max-width: 420px;
-
-  border-radius: 24px;
-
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-
-  box-shadow:
-    0 10px 30px rgba(0,0,0,0.15);
-
-  opacity: 0.95;
+  opacity: 0.9;
+  transform: scale(1.05); /* subtle cinematic feel */
 }
 
 .panel-top{
-  flex:1.2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 
 .panel-bottom {
-  flex: 1;
-  display:  flex;
+  position: relative;
+  z-index: 2;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
 }
 
 .side-image {
@@ -161,9 +159,7 @@ ul.b {
 /* Progress circle */
 .progress-circle {
   position: relative;
-  width: 200px;
-  height: 200px;
-  stroke: #347880;
+  z-index: 2;
 }
 
 .progress-circle svg {
