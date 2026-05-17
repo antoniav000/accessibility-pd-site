@@ -97,7 +97,7 @@ ul.b {
   padding: 15px;
 }
 
-/* Button to start modules and quizzes */
+/* Button to start modules */
 .start-btn {
   background-color: #347880;
   color: white;
@@ -112,6 +112,24 @@ ul.b {
 
 /* Start button background changes when hovered over */
 .start-btn:hover {
+  background-color: #2a6872;
+}
+
+/* Button to start quizzes */
+.start-quiz-btn {
+  display: block;
+  margin: 20px auto;
+  background-color: #347880;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Start quiz button background changes when hovered over */
+.start-quiz-btn:hover {
   background-color: #2a6872;
 }
 
