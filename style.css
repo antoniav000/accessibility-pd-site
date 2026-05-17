@@ -428,7 +428,9 @@ iframe {
 
 /* Submit button */
 #quiz-container button {
-  margin-top: 15px;
+  display: block;
+  margin: 15px auto 0 auto;
+
   padding: 10px 16px;
   border: none;
   background-color: #347880;
@@ -436,7 +438,6 @@ iframe {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  align-items: center;
 }
 
 #quiz-container button:hover {
