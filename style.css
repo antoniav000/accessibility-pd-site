@@ -316,6 +316,40 @@ ul.b {
   padding: 5px;
 }
 
+.sources-dropdown {
+  width: 80%;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.sources-dropdown summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.sources-list {
+  padding-left: 20px;
+}
+
+.sources-list li {
+  margin-bottom: 10px;
+}
+
+.sources-list a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.sources-list a:hover {
+  text-decoration: underline;
+}
+
 /*Quiz container*/
 #quiz-container {
   max-width: 700px;
