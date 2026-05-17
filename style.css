@@ -37,6 +37,9 @@ ul.b {
   max-width: 640px;
   margin: 10px auto;
 
+  margin-top: 5px;
+  margin-bottom: 5px;
+
   padding-left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
