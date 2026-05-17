@@ -19,7 +19,177 @@
 
 <h1 class="moduleheading">Module 3: Accessible PDFs</h1>
 
-<p>Content goes here...</p>
+<p class="p2">What is a Screen Reader?</p>
+
+<p class="p1">A screen reader is a type of assistive technology that converts digital text and interface elements into audio or braille output. It is primarily used by people who are blind or have low vision, but it can also help users with learning disabilities, injuries, or reading difficulties. </p>
+
+<p class="p1">The purpose of a screen reader is to allow users to navigate websites, apps, documents, and software without relying on vision. It reads aloud: 
+</p>
+
+<ul class="b">
+  <li>Text</li>
+  <li>Buttons</li>
+  <li>Links</li>
+  <li>Headings</li>
+  <li>Form fields</li>
+  <li>Image descriptions (alt text)</li>
+</ul>
+
+<p class="p1">Some common screen readers are JAWS, NVDA, VoiceOver (for MacOS), and TalkBack.
+</p>
+
+<p class="p2">How do screen readers work?</p>
+
+<p class="p2">Linear Navigation</p>
+
+<p class="p1">Screen readers usually read content in a linear order, from top to bottom 
+  and left to right in the sturcture of the page.
+</p>
+
+<p class="p2">Reading Structure</p>
+
+<p class="p1">Screen readers use HTML structure and accessibility tags to understand content.
+</p>
+
+<p class="p1">Important structural elements include:
+</p>
+
+<ul class="b">
+  <li>Headings (H1, H2, H3)</li>
+  <li>Landmarks (navigation, main content, footer)</li>
+  <li>Lists</li>
+  <li>Tables</li>
+  <li>Form labels</li>
+  <li>Buttons and links</li>
+</ul>
+
+<p class="p1">For example:</p>
+
+<ul class="b">
+  <li>An H1 tells the user the main topic of the page</li>
+  <li>H2s organize sections</li>
+</ul>
+
+<p class="p1">Without structure, a page might seem like one long block of text.</p>
+
+<p class="p2">Best Practices</p>
+
+<p class="p2">Proper Headings</p>
+
+<p class="p1">Use headings in order:</p>
+
+<ul class="b">
+  <li>H1 for main page title</li>
+  <li>H2 for section headings</li>
+  <li>H3 for subsections</li>
+</ul>
+
+<p class="p1">Correct structure helps users navigate quickly. 
+  It is also helpful to avoid skipping levels (like H1 directly to H4). </p>
+
+<p class="p2">Alt Text Writing</p>
+
+<p class="p1">Alt text describes image for users who cannot see them.</p>
+
+<ul class="b">
+  <li>Good alt text: “Students using a laptop with a screen reader enabled”</li>
+  <li>Bad alt text: “image123.jpg”</li>
+</ul>
+
+<p class="p1">Decorative images should usually be marked as decorative 
+  so that they are skipped by screen readers.</p>
+
+<p class="p2">Link Clarity</p>
+
+<p class="p1">Links should always describe their destination or purpose. For example:</p>
+
+<ul class="b">
+  <li>Good: "Download the accessibility checklist"</li>
+  <li>Bad: "Click here"</li>
+</ul>
+
+<p class="p2">Making PDFs and Files Accessible</p>
+
+<p class="p1">PDFs can become inaccessible when they are created from scanned images instead 
+  of real text, lack headings and document structure, have missing alt text for images, 
+  use incorrect reading order, or contain unlabeled tables and links.
+</p>
+
+<p class="p1">Start with the Source File Principle</p>
+
+<p class="p1">The easiest way to create an accessible PDF is to make the original document 
+  accessible first. </p>
+
+<p class="p1">Examples of source files</p>
+
+<ul class="b">
+  <li>Microsoft Word documents</li>
+  <li>Google Docs files</li>
+  <li>Microsoft PowerPoint slides</li>
+</ul>
+
+<p class="p1">If you can create an original document for accessibility, when exported 
+  correctly, any accessibility features carry over into the PDF automatically. It is b
+  est practice to make the original file accessible, export to a PDF format, run an 
+  accessibility check, and fix any remaining issues.</p>
+
+<p class="p2">Steps for Accessibility</p>
+
+<ul class="b">
+  <li>Check structure (make sure document has real headings, lists created with list tools, and proper table headers)</li>
+  <li>Add alt text (describe meaningful images)</li>
+  <li>Export properly (enable accessibility/tagging options when saving/exporting as PDF)</li>
+  <li>Run an accessibility checker (Adobe Acrobat Pro Accessibility Checker, Microsoft Word Accessibility Checker)</li>
+</ul>
+
+<p class="p2">Fixing Existing PDFs (Using Adobe Acrobat Pro)</p>
+
+<p class="p1">Main tools in Acrobat: </p>
+
+<ul class="b">
+  <li>Accessibility Checker</li>
+  <li>Reading Order tool</li>
+  <li>Tags panel</li>
+  <li>Set alternate text</li>
+  <li>Autotag Document</li>
+</ul>
+
+<p class="p1">Here is the official <a href="https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html">Adobe Acrobat Accessibility Guide</a>.</p>
+
+<p class="p2">Making PDFs Accessible in Adobe Acrobat Pro</p>
+
+<iframe width="560" height="315" src="https://youtu.be/tzg6zEmKym0?si=M_BkZ69KVV9B_ICw" 
+title="Making PDFs Accessible in Adobe Acrobat Pro" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p class="p2">Alternative to Adobe Acrobat Pro</p>
+
+<p class="p1">Adobe Acrobat Pro has the limitation of being a subscription only software, 
+  so many accessibility features are not available with the free version. An alternative 
+  way to make PDFs more accessible would be to use a separate OCR tool to create 
+  recognizable text and edit this text in Word to make it more accessible. OCR (Optical 
+  Character Recognition) converts scanned image text into selectable, readable text. 
+  Without OCR, screen readers cannot read the document properly and text cannot be 
+  searched or highlighted.</p>
+
+<p class="p1">Here are some alternative OCR methods to Adobe Acrobat Pro: </p>
+
+<ul class="b">
+  <li><a href="https://github.com/tesseract-ocr/tesseract">Tesseract</a></li>
+  <li><a href="https://github.com/hiroi-sora/Umi-OCR">Umi-OCR</a></li>
+</ul>
+
+<p class="p1">After using OCR to create readable and editable text, edit this in 
+  Word for accessibility. </p>
+
+<p class="p2">Key Takeaway</p>
+
+<p class="p1">Accessible PDFs are much easier to create when accessibility is built 
+  into the original document first. OCR, tagging, headings, alt text, and proper reading 
+  order are all essential for ensuring screen reader compatibility. 
+</p>
+
 
 <button class="start-btn" onclick=startQuiz()">Start Quiz</button>
 
@@ -33,7 +203,7 @@
   </div>
 </div>
 
-<script src="../quizzes/quiz1.js"></script>
+<script src="../quizzes/quiz3.js"></script>
 <script src="../script.js"></script>
 
 </body>
