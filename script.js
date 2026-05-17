@@ -17,7 +17,7 @@ function animateNumber(targetPercent) {
       current++;
       el.textContent = `${current}%`;
     }
-  }, 15); // speed (lower = faster)
+  }, 15);
 }
 
 // Progress circle
