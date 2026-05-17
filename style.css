@@ -317,7 +317,8 @@ ul.b {
 }
 
 .sources-dropdown {
-  width: 80%;
+  width: 60%;
+  max-width: 700px;
   margin: 30px auto;
   background-color: white;
   border-radius: 10px;
