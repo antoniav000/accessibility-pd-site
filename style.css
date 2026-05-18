@@ -24,6 +24,7 @@ h1 {
   margin-top: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
+  padding-bottom: 5px;
 }
 
 .paragraph {
@@ -37,8 +38,8 @@ ul.b {
   max-width: 640px;
   margin: 10px auto;
 
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 
   padding-left: 20px;
   font-family: Arial, Helvetica, sans-serif;
