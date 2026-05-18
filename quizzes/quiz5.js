@@ -2,12 +2,12 @@ const quizData = [
   {
     question: "Which statement best reflects the philosophy of inclusive teaching?",
     options: [
-      "Accessibility should only be provided after a student requests accommodations",
+      "Accessibility and flexibility should be built into course design from the beginning",
       "Fairness means treating every student exactly the same",
       "Accessibility and flexibility should be built into course design from the beginning",
-      "Inclusive teaching only applies to students with documented disabilities"
+      "Accessibility should only be provided after a student requests accommodations"
     ],
-    answer: 2
+    answer: 0
   },
   {
     question: "Which of the following is an example of an inclusive course policy?",
